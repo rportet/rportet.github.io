@@ -1,7 +1,23 @@
-body {
+div.image {
+    border: 1px solid #ccc;
+    width: 150px;
+    margin: 20px 0px;
+    text-align: center;
 }
 
-img {
+div.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+
+div.image a {
+    display: inline;
+}
+
+body {}
+
+.photo {
     float: left;
     width: 150px;
 }
@@ -11,11 +27,13 @@ a {
     height: 50px;
 }
 
-aside {
-    width: 80%;
-    text-align: right;
+.menu-rs {
+    width: 20%;
     height: 400px;
     border: 3px dashed #000000;
+    float:right;
+    overflow: hidden;
+    padding-top:5px;
 }
 
 section {
@@ -44,4 +62,8 @@ td {
 
 td img {
     width: 20px;
+}
+
+nav{
+    margin:10px;
 }
