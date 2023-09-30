@@ -5,8 +5,20 @@ body {}
 
 }
 
+.video_body {
+    background-color: rgb(79, 5, 5);
+    color: white;
+}
+
 .video figcaption {
     float: right;
+    width: 30%;
+    border: dotted;
+    border-color: white;
+    background-color: black;
+    padding: 7px;
+    margin: 10px;
+    position: sticky;
 }
 
 div.image {
