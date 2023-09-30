@@ -1,13 +1,13 @@
-body {
-
-}
+body {}
 
 #page_image {
-    background-image: linear-gradient(to bottom right,rgb(0, 195, 255), green, yellow );
+    background-image: linear-gradient(to bottom right, rgb(0, 195, 255), green, yellow);
 
 }
 
-
+.video figcaption {
+    float: right;
+}
 
 div.image {
     border: 1px solid #ccc;
@@ -44,12 +44,10 @@ div.image a {
 .photo {
     float: left;
     width: 150px;
-}
-
-.photo {
     display: block;
     height: 50px;
 }
+
 
 .menu-rs {
     width: 20%;
