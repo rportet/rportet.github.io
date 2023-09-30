@@ -2,6 +2,12 @@ body {
 
 }
 
+#page_image {
+    background-image: linear-gradient(to bottom right,rgb(0, 195, 255), green, yellow );
+
+}
+
+
 
 div.image {
     border: 1px solid #ccc;
@@ -14,7 +20,7 @@ div.image {
     border-collapse: separate;
     border-spacing: 10px;
     caption-side: bottom;
-    background-color: green;
+    background-color: rgb(88, 20, 20);
 }
 
 .galerie td {
