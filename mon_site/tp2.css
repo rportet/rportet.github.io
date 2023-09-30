@@ -12,14 +12,22 @@ div.image {
 
 .galerie {
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 10px;
     caption-side: bottom;
+    background-color: green;
 }
 
+.galerie td {
+    background-color: white;
+}
 
-div.desc {
+.cadre {
     padding: 15px;
-    text-align: center;
+    margin: 15px;
+    background-color: rgb(5, 81, 5);
+    color: white;
+    font-size: large;
+    border: black;
 }
 
 
@@ -55,7 +63,7 @@ table {
     border-collapse: collapse;
 }
 
-th {
+.activite {
     border: 1px solid #000000;
     border-collapse: collapse;
     padding: 50px;
