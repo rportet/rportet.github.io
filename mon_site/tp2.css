@@ -1,9 +1,21 @@
+body {
+
+}
+
+
 div.image {
     border: 1px solid #ccc;
     width: 150px;
     margin: 20px 0px;
     text-align: center;
 }
+
+.galerie {
+    border-collapse: separate;
+    border-spacing: 5px;
+    caption-side: bottom;
+}
+
 
 div.desc {
     padding: 15px;
@@ -20,7 +32,7 @@ div.image a {
     width: 150px;
 }
 
-a {
+.photo {
     display: block;
     height: 50px;
 }
@@ -64,8 +76,12 @@ td {
     padding: 20px;
 }
 
-td img {
+td a img {
+    text-align: center;
     width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
