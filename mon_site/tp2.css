@@ -1,5 +1,22 @@
 body {}
 
+
+div.sticky {
+    position: -webkit -sticky;
+    position: sticky;
+    top:0;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    border-color: rgb(223, 32, 32);
+}
+
+nav a {
+    display: inline;
+}
+
 #page_image {
     background-image: linear-gradient(to bottom right, rgb(0, 195, 255), green, yellow);
 
@@ -106,10 +123,6 @@ td a img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-nav {
-    margin: 10px;
 }
 
 .article-contenu,
