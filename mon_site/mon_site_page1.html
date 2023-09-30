@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Mon site</title>
-        <link type="text/css" rel="stylesheet" href="tp2.css"/>
+        <link type="text/css" rel="stylesheet" href="tp2.css" />
     </head>
     <body>
         <header>
@@ -12,55 +12,83 @@
         <h1>PORTET Rémy</h1>
         <aside class="menu-rs">Liens vers mes réseaux sociaux
             <ul>
-                <li><a href="https://ma_page_facebook.fr" title="ma page facebook">Ma page facebook</a></li>
-                <li><a href="https://ma_page_instagram.fr" title="ma page instagram">Ma page instagram</a></li>
-                <li><a href="https://ma_page_linkedin.fr" title="ma page linkedin">Ma page linkedin</a></li>
+                <li><a href="https://ma_page_facebook.fr"
+                        title="ma page facebook">Ma page facebook</a></li>
+                <li><a href="https://ma_page_instagram.fr"
+                        title="ma page instagram">Ma page instagram</a></li>
+                <li><a href="https://ma_page_linkedin.fr"
+                        title="ma page linkedin">Ma page linkedin</a></li>
             </ul>
         </aside>
-        <img src="ma_photo.jpeg" title="Ma photo" alt="Il s'agit d'une photode format carte d'identité, où l'on voit mon visage de face" />
-            <div>
-                <h2>Présentation :</h2></div>
-                <p>Bonjour, je m'appelle Rémy Portet, j'ai 18 ans, et je suis actuellement étudiant en première année de BUT Informatique à l'IUT d'Aubiere.
-                </p>
-            <div>
-                <h2>Mes caractéristiques :</h2>
-                <section>
-                    <article>
-                        <h3>Un titre</h3>
-                        <p>Un paragraphe
-                            <a href="#suite_du_1er_paragraphe" title="suite1">lire la suite du paragraphe (summary)</a>
-                        </p>
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <h3>Un deuxième titre</h3>
-                        <p>Un deuxième paragraphe
-                            <a href="#suite_du_2e_paragraphe" title="suite2">lire la suite du deuxième paragraphe</a>
-                        </p>
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <h3>Un troisième titre</h3>
-                        <p>Un troisième paragraphe
-                            <a href="#suite_du_3e_paragraphe" title="suite3">lire la suite du troisième paragraphe</a>
-                        </p>
-                    </article>
-                </section>
-                
-            </div>
-            <div>
-                <nav>
-                    <h2>Plan du site :</h2>
-                    <p><a href="mon_site_page2.html" title="mon cursus scolaire">Mon cursus scolaire</a>
-                        <br/>
-                        <a href="mon_site_page3.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
-                        <br/>
-                        <a href="mon_site_page4.html" title="Images">Images</a>
+        <img src="ma_photo.jpeg" title="Ma photo"
+            alt="Il s'agit d'une photode format carte d'identité, où l'on voit mon visage de face" />
+        <div>
+            <h2>Présentation :</h2></div>
+        <p>Bonjour, je m'appelle Rémy Portet, j'ai 18 ans, je suis né le 28 Octobre 2004 à Compiègne, et je suis
+            actuellement étudiant en première année de BUT Informatique à l'IUT
+            d'Aubiere.
+        </p>
+        <div>
+            <h2>Mes caractéristiques :</h2>
+            <section>
+                <h3>Mes passions</h3>
+                <article class="article-contenu">
+                    <input type="checkbox" id="voir-plus">
+                    <label for="voir-plus">Voir plus...</label>
+                    <p class="texte-complet">
+                        J'aime bien jouer aux jeux vidéos, jouer et écouter de
+                        la
+                        musique (je joue de la guitare), mon groupe favori est
+                        Nirvana, mes films préférés sont ceux de la franchise
+                        Star Wars.
                     </p>
-                </nav>
-            </div>
-            <footer>Mes informations (contact, adresse mail, téléphone)</footer>
+                </article>
+            </section>
+            <section>
+                <h3>Mes études</h3>
+                <article class="article-contenu2">
+                    <input type="checkbox" id="voir-plus2">
+                    <label for="voir-plus2">Voir plus...</label>
+                    <p class="texte-complet">
+                        Comme dit précédemment, je suis actuellement en première
+                        année de formation type Bachelor Universitaire
+                        Technologique en section Informatique à l'Institut
+                        Universitaire Technologique situé sur le campus des
+                        Cézeaux à Aubière, avenue Blaise Pascal. Vous pourrez trouver plus de description dans la page cursus scolaire.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h3>Ma famille</h3>
+                <article class="article-contenu3">
+                    <input type="checkbox" id="voir-plus3">
+                    <label for="voir-plus3">Voir plus...</label>
+                    <p class="texte-complet">
+                        J'ai 2 petits frère âgés respectivement de 13 et 16 ans
+                        que je bats à littéralement n'importe quel jeu vidéo
+                        (sauf peut-être Rocket League pour le deuxième), mon
+                        père et ma mère qui ont dans l'ordre 31 ans et 35 ans,
+                        un chien noir de 1 an qui s'appelle Tux et un chat roux
+                        de 3 ans qui s'appelle Roby.
+                    </p>
+                </article>
+            </section>
+
+        </div>
+        <div>
+            <nav>
+                <h2>Plan du site :</h2>
+                <p><a href="mon_site_page2.html" title="mon cursus scolaire">Mon
+                        cursus scolaire</a>
+                    <br />
+                    <a href="mon_site_page3.html"
+                        title="activités extra-scolaires">Mes activités
+                        extra-scolaires</a>
+                    <br />
+                    <a href="mon_site_page4.html" title="Images">Images</a>
+                </p>
+            </nav>
+        </div>
+        <footer>Mes informations (contact, adresse mail, téléphone)</footer>
     </body>
 </html>
