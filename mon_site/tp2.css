@@ -13,6 +13,10 @@ div.sticky {
     border-color: rgb(223, 32, 32);
 }
 
+.sticky a {
+    justify-content: space-around;
+}
+
 nav a {
     display: inline;
 }
@@ -85,6 +89,12 @@ div.image a {
     float: right;
     overflow: hidden;
     padding-top: 5px;
+    text-align: center;
+}
+
+.menu-rs img {
+    height: 100px;
+    width: auto;
 }
 
 section {
