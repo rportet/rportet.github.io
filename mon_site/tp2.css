@@ -14,7 +14,7 @@ a:visited {
 
 div.sticky {
     position: sticky;
-    top:0;
+    top:0px;
     padding: 50px;
     font-size: 20px;
     text-align: center;
@@ -27,6 +27,13 @@ div.sticky {
 
 .sticky a {
     justify-content: space-around;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 5px rgba(201, 61, 61, 0.774);
 }
 
 nav a {
@@ -105,9 +112,13 @@ div.image a {
 }*/
 
 .menu-rs2 {
+    height: 800px;
+    float: right;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
     border: 3px dashed grey;
+    padding: 10px;
 }
 
 .menu-rs2 img {
@@ -119,7 +130,7 @@ div.image a {
     height: 150px;
     width: auto;
     position: relative;
-    right: 20px;
+    right: 25px;
     top: 0px;
 }
 
