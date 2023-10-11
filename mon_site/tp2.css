@@ -1,9 +1,9 @@
 .accueil {
-    height: 100000;
+    height: 10000px;
     background-image: linear-gradient(to top left, rgba(91, 174, 212, 0.575), white);
 }
 
-.block:hover {
+.lien:hover {
     background: rgba(180, 8, 8, 0.678);
     color: yellow;
 }
@@ -13,12 +13,13 @@ a:visited {
 }
 
 div.sticky {
-    position: -webkit -sticky;
     position: sticky;
     top:0;
     padding: 50px;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
     background-color: white;
     box-shadow: 5px 5px 10px black;
     border-color: rgb(223, 32, 32);
@@ -104,11 +105,8 @@ div.image a {
 }*/
 
 .menu-rs2 {
-    width: 400px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
+    flex-direction: row-reverse;
     border: 3px dashed grey;
 }
 
@@ -117,7 +115,16 @@ div.image a {
     width: auto;
 }
 
+#X {
+    height: 150px;
+    width: auto;
+    position: relative;
+    right: 20px;
+    top: 0px;
+}
+
 .contact {
+    font-size: 20px;
     text-align: center;
     background-color: white;
 }
