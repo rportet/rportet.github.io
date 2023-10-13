@@ -1,3 +1,4 @@
+
 .accueil {
     height: 10000px;
     background-image: linear-gradient(to top left, rgba(91, 174, 212, 0.575), white);
@@ -11,21 +12,50 @@
 a:visited {
     color :rgb(5, 81, 5);
 }
-
+/*
 div.sticky {
     position: sticky;
     top:0px;
     padding: 50px;
     font-size: 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 5px 5px 10px black;
     border-color: rgb(223, 32, 32);
 }
+*/
+/*
+div.sticky nav {
+    display: flex;
+    justify-content: space-around;
+}
+*/
 
-.sticky a {
+
+header div.sticky nav {
+    position: sticky;
+    top 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    border: solid 3px;
+    border-color: black;
+    padding: 15px;
+}
+
+header div.sticky nav h2 {
+    font-size: 30px;
+    align-self: center;
+    color: red;
+}
+
+
+header div.sticky nav p {
+    flex: 1;
+    align-self: center;
     justify-content: space-around;
 }
 
@@ -36,13 +66,9 @@ div.sticky {
     text-shadow: 2px 2px 5px rgba(201, 61, 61, 0.774);
 }
 
-nav a {
-    display: inline;
-}
 
 #page_image {
     background-image: linear-gradient(to bottom right, rgb(0, 195, 255), green, yellow);
-
 }
 
 .video_body {
@@ -115,10 +141,10 @@ div.image a {
     height: 800px;
     float: right;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
     border: 3px dashed grey;
-    padding: 10px;
+    padding: 15px;
 }
 
 .menu-rs2 img {
