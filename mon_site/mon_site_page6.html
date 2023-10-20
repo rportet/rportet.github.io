@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon site</title>
+        <link type="text/css" rel="stylesheet" href="tp2.css" />
+    </head>
+    <body>
+        <header>
+            <div class="sticky">
+            <nav>
+                <h2>Plan du site :</h2>
+                    <a href="mon_site_page1.html" title="Page d'accueil">Page d'accueil</a>
+                    <a href="mon_site_page2.html" title="cursus scolaire">Cursus scolaire</a>
+                    <a href="mon_site_page3.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
+                    <a href="mon_site_page4.html" title="Images">Images</a>
+                    <a href="mon_site_page5.html" title="Videos">Videos</a>
+            </nav>
+        </div>
+        <h1><mark><em>Page Contact</em></mark></h1>
+        </header>
+        <h1>PORTET Rémy</h1>
+        <div>
+            <form action="traitement.php" method="get">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required/>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <label for="notel">Numéro de téléphone</label>
+                <input type="tel" id="notel" name="notel" placeholder="Numéro de téléphone"/>
+                <select name="motif" id="motif">
+                    <option value="1">Professionnel</option>
+                    <option value="2">Personnel</option>
+                    <option value="3">Ennui</option>
+                    <option value="4">J'avais faim</option>
+                </select>
+                <label for="creneau">Créneau horaire</label>
+                <input type="date" id="date" name="date" placeholder="Date"/>
+                <label for="oui">Première demande</label>
+                <input type="radio" name="oui" id="oui" value="choix_1" checked>
+                <label for="non">Pas la première demande</label>
+                <input type="radio" name="non" id="non" value="choix_2">
+                <label for="message">Message</label>
+                <textarea name="message" id="mess" rows="5" cols="30" required></textarea>
+                <label for="submit">Bouton d'envoi</label>
+                <input type="submit" id="submit" name="submit" placeholder="Envoyer"/>
+                <label for="reset">Réinitialiser le formulaire</label>
+                <input type="reset" id="reset" name="reset" placeholder="Réinitialiser"/>
+            </form>
+        </div>
+        <footer>Mes informations (contact, adresse mail, téléphone)</footer>
+    </body>
+</html>
