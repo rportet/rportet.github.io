@@ -1,0 +1,89 @@
+/**Styles communs à toutes les pages**/
+
+.photo_profil {
+    height: 150px;
+    width: auto;
+    border: dotted 2px grey;
+    border-radius: 60px;
+}
+
+/**Page d'accueil**/
+
+/*Paragraphes déroulants*/
+
+.article-contenu,
+.article-contenu2,
+.article-contenu3 {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-contenu input[type="checkbox"],
+.article-contenu2 input[type="checkbox"],
+.article-contenu3 input[type="checkbox"] {
+    display: none;
+}
+
+.article-contenu input[type="checkbox"]+label,
+.article-contenu2 input[type="checkbox"]+label,
+.article-contenu3 input[type="checkbox"]+label {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.article-contenu input[type="checkbox"]:checked+label+.texte-complet,
+.article-contenu input[type="checkbox"]:checked+label:focus+.texte-complet,
+.article-contenu2 input[type="checkbox"]:checked+label+.texte-complet,
+.article-contenu2 input[type="checkbox"]:checked+label:focus+.texte-complet,
+.article-contenu3 input[type="checkbox"]:checked+label+.texte-complet,
+.article-contenu3 input[type="checkbox"]:checked+label:focus+.texte-complet {
+    white-space: normal;
+}
+
+/**Page activités extra-scolaires**/
+
+.tableau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bords {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.bords td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.bords td img {
+    text-align: center;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bords th {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 50px;
+    background-color: rgb(17, 17, 160);
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.bords tr {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+/**Page images**/
+

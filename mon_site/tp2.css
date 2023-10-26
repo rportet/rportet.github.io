@@ -1,14 +1,19 @@
 
+/** Ce fichier est l'ancienne version de mon CSS pour les pages de mon site, j'ai décidé de tout reprendre dans le fichier mon_style.css. Certains de ces styles sont encore utilisés dans mon_style.css. **/
+
+/*Ancien style pour la page d'accueil*/
 .accueil {
     height: 10000px;
     background-image: linear-gradient(to top left, rgba(91, 174, 212, 0.575), white);
 }
 
+/*Ancien style pour le survol de liens*/
 .lien:hover {
     background: rgba(180, 8, 8, 0.678);
     color: yellow;
 }
 
+/*Ancien style pour les liens déjà visités*/
 a:visited {
     color :rgb(5, 81, 5);
 }
@@ -32,7 +37,7 @@ div.sticky nav {
 }
 */
 
-
+/*Ancien style pour le menu*/
 header div.sticky nav {
     position: sticky;
     top 0;
@@ -46,19 +51,21 @@ header div.sticky nav {
     padding: 15px;
 }
 
+/*Ancien style pour le titre*/
 header div.sticky nav h2 {
     font-size: 30px;
     align-self: center;
     color: red;
 }
 
-
+/*Ancien style pour le menu*/
 header div.sticky nav p {
     flex: 1;
     align-self: center;
     justify-content: space-around;
 }
 
+/*ancien style pour les titres*/
 .title {
     font-size: 100px;
     text-align: center;
@@ -66,16 +73,18 @@ header div.sticky nav p {
     text-shadow: 2px 2px 5px rgba(201, 61, 61, 0.774);
 }
 
-
+/*Ancien style pour la page images*/
 #page_image {
     background-image: linear-gradient(to bottom right, rgb(0, 195, 255), green, yellow);
 }
 
+/*Ancien style pour l'arrière-plan de la page videos*/
 .video_body {
     background-color: rgb(79, 5, 5);
     color: white;
 }
 
+/*Ancien style pour la légende de la vidéo*/
 .video figcaption {
     float: right;
     width: 30%;
@@ -87,6 +96,7 @@ header div.sticky nav p {
     position: sticky;
 }
 
+/*Ancien style pour la taille des images*/
 div.image {
     border: 1px solid #ccc;
     width: 150px;
@@ -94,6 +104,7 @@ div.image {
     text-align: center;
 }
 
+/*Ancien style pour le tableau de la page images*/
 .galerie {
     border-collapse: separate;
     border-spacing: 10px;
@@ -101,10 +112,12 @@ div.image {
     background-color: rgb(88, 20, 20);
 }
 
+/*Ancien style pour les cases du tableau de la page image*/
 .galerie td {
     background-color: white;
 }
 
+/*Ancien style pour la partie header et footer du tableau*/
 .cadre {
     padding: 15px;
     margin: 15px;
@@ -114,11 +127,12 @@ div.image {
     border: black;
 }
 
-
+/*Ancien style pour les images*/
 div.image a {
     display: inline;
 }
 
+/*Ancien style pour la taille des images*/
 .photo {
     float: left;
     width: 150px;
@@ -137,6 +151,7 @@ div.image a {
     text-align: center;
 }*/
 
+/*Ancien style pour le menu*/
 .menu-rs2 {
     height: 800px;
     float: right;
@@ -147,11 +162,13 @@ div.image a {
     padding: 15px;
 }
 
+/*Ancien style pour l'image dans le menu*/
 .menu-rs2 img {
     height: 100px;
     width: auto;
 }
 
+/*Ancien style pour le png du logo X, était disproportionné par rapport aux autres images*/
 #X {
     height: 150px;
     width: auto;
@@ -160,18 +177,20 @@ div.image a {
     top: 0px;
 }
 
+/*Ancien style pour les informations de contact*/
 .contact {
     font-size: 20px;
     text-align: center;
     background-color: white;
 }
 
-
+/*Ancien style pour les tableaux*/
 table {
     border: 2px solid #000000;
     border-collapse: collapse;
 }
 
+/*Ancien style pour les titres du tableaux de la page activité*/
 .activite {
     border: 1px solid #000000;
     border-collapse: collapse;
@@ -182,17 +201,20 @@ table {
     text-align: center;
 }
 
+/*Ancien style pour les cases*/
 tr {
     border: 1px solid #000000;
     border-collapse: collapse;
 }
 
+/*Ancien style pour les cases*/
 td {
     border: 1px solid #000000;
     border-collapse: collapse;
     padding: 20px;
 }
 
+/*Ancien style pour les images dans les cases*/
 td a img {
     text-align: center;
     width: 150px;
@@ -201,6 +223,7 @@ td a img {
     margin-right: auto;
 }
 
+/*Ancien style pour les "voir plus"*/
 .article-contenu,
 .article-contenu2,
 .article-contenu3 {
@@ -210,12 +233,14 @@ td a img {
     text-overflow: ellipsis;
 }
 
+/*Ancien style pour les "voir plus"*/
 .article-contenu input[type="checkbox"],
 .article-contenu2 input[type="checkbox"],
 .article-contenu3 input[type="checkbox"] {
     display: none;
 }
 
+/*Ancien style pour les "voir plus"*/
 .article-contenu input[type="checkbox"]+label,
 .article-contenu2 input[type="checkbox"]+label,
 .article-contenu3 input[type="checkbox"]+label {
@@ -224,6 +249,7 @@ td a img {
     text-decoration: underline;
 }
 
+/*Ancien style pour les "voir plus"*/
 .article-contenu input[type="checkbox"]:checked+label+.texte-complet,
 .article-contenu input[type="checkbox"]:checked+label:focus+.texte-complet,
 .article-contenu2 input[type="checkbox"]:checked+label+.texte-complet,
