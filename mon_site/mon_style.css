@@ -151,3 +151,32 @@
 
 /**Page images**/
 
+.galerie {
+    border-collapse: separate;
+    border-spacing: 10px;
+    caption-side: bottom;
+    background-color: rgb(88, 20, 20);
+}
+
+.galerie td {
+    background-color: white;
+}
+
+td a img {
+    text-align: center;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galerie td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.galerie tr {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
