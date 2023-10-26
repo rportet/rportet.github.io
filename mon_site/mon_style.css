@@ -3,6 +3,8 @@
 .photo_profil {
     height: 150px;
     width: auto;
+    border: dotted 2px grey;
+    border-radius: 60px;
 }
 
 /**Page d'accueil**/
