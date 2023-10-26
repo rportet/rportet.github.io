@@ -7,6 +7,70 @@
     border-radius: 60px;
 }
 
+.titre {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: -2px -2px 2px rgb(61, 61, 140);
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+.menu div nav div {
+    display: flex;
+    justify-content: space-around;
+    background-color: forestgreen;
+}
+
+.menu div a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+
+.lien_menu:hover {
+    background-color: rgb(29, 107, 29);
+}
+
+.menu ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+.menu ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+.menu ul li ul li a {
+    display:block !important;
+}
+
+.menu ul li ul li:hover {
+    background: #666;
+}
+
+
 /**Page d'accueil**/
 
 /*Paragraphes déroulants*/

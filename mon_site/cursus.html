@@ -8,22 +8,30 @@
 </head>
 
 <body>
-    <header>
+    <header class="menu">
         <div>
+            <h2>Plan du site :</h2>
             <nav>
-                <h2>Plan du site :</h2>
-                <p>
-                    <a href="accueil.html" title="Page d'accueil">Page d'accueil</a>
-                    <a href="activites.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
-                    <a href="images.html" title="Images">Images</a>
-                    <a href="videos.html" title="Videos">Vidéos</a>
-                </p>
+                <div>
+                    <a class="lien_menu" href="accueil.html" title="accueil">Accueil</a>
+                    <a class="lien_menu" href="cursus.html" title="mon cursus scolaire">Mon cursus scolaire</a>
+                    <a class="lien_menu" href="activites.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
+                        <ul>
+                          <li>
+                            <a class="lien_menu" href="#">Médias</a>
+                            <ul>
+                              <li><a href="images.html" title="Images">Images</a></li>
+                              <li><a href="videos.html" title="Videos">Vidéos</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                </div>
             </nav>
         </div>
-        <h1><mark>Mon cursus scolaire</mark></h1>
     </header>
+    <h1 class="titre"><em>Mon cursus scolaire</em></h1>
     <h1>PORTET Rémy</h1>
-    <a href="ma_photo.jpeg" target="_self"><img class="photo_profil" src="ma_photo.jpeg" title="Ma photo" alt="Il s'agit d'une photode format carte d'identité, où l'on voit mon visage de face"/></a>
+    <a href="photos-videos/ma_photo.jpeg" target="_self"><img class="photo_profil" src="photos-videos/ma_photo.jpeg" title="Ma photo" alt="Il s'agit d'une photode format carte d'identité, où l'on voit mon visage de face"/></a>
     <div>
         <h2>Mon cursus scolaire :</h2>
         <section>

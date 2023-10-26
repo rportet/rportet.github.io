@@ -3,25 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Mon site</title>
-        <link type="text/css" rel="stylesheet" href="tp2.css" />
+        <link type="text/css" rel="stylesheet" href="mon_style.css" />
     </head>
     <body class="video_body">
-        <header>
-            <div class="sticky">
-            <nav>
+        <header class="menu">
+            <div>
                 <h2>Plan du site :</h2>
-                    <a href="mon_site_page1.html" title="Page d'accueil">Page d'accueil</a>
-                    <a href="mon_site_page2.html" title="cursus scolaire">Cursus scolaire</a>
-                    <a href="mon_site_page3.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
-                    <a href="mon_site_page4.html" title="Images">Images</a>
-            </nav>
-        </div>
-        <h1><mark><em>Page vidéos</em></mark></h1>
+                <nav>
+                    <div>
+                        <a class="lien_menu" href="accueil.html" title="accueil">Accueil</a>
+                        <a class="lien_menu" href="cursus.html" title="mon cursus scolaire">Mon cursus scolaire</a>
+                        <a class="lien_menu" href="activites.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
+                            <ul>
+                              <li>
+                                <a class="lien_menu" href="#">Médias</a>
+                                <ul>
+                                  <li><a href="images.html" title="Images">Images</a></li>
+                                  <li><a href="videos.html" title="Videos">Vidéos</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
+        <h1><em>Page vidéos</em></h1>
         <h1>PORTET Rémy</h1>
         <div>
             <figure class="video">
-                <video src="star_wars_4.mp4" controls poster="scale.jpeg"
+                <video src="photos-videos/star_wars_4.mp4" controls poster="photos-videos/scale.jpeg"
                     height=375px></video>
                 <figcaption>Un court extrait de la meilleure partie du premier
                     épisode</figcaption>
