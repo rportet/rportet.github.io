@@ -38,17 +38,17 @@
             <form action="traitement.php" method="get">
                 <div>
                     <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Nom"
+                    <input type="text" id="nom" name="nom" placeholder="Nom" maxlength="30"
                         required />
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email"
+                    <input type="email" id="email" name="email" maxlength="256"
                         placeholder="Email" required />
                 </div>
                 <div>
                     <label for="notel">Numéro de téléphone</label>
-                    <input type="tel" id="notel" name="notel"
+                    <input type="tel" id="notel" name="notel" maxlength="20"
                         placeholder="Numéro de téléphone" />
                 </div>
                 <div>
@@ -61,20 +61,20 @@
                 </div>
                 <div>
                     <label for="creneau">Créneau horaire</label>
-                    <input type="date" id="date" name="date" placeholder="Date" />
+                    <input type="datetime-local" id="date" name="date" placeholder="Date" />
                 </div>
                 <div>
                     <label for="oui">Première demande</label>
-                    <input type="radio" name="oui" id="oui" value="choix_1"
+                    <input type="radio" name="demande" id="oui" value="oui"
                         checked>
                 </div>
                 <div>
                     <label for="non">Pas la première demande</label>
-                    <input type="radio" name="non" id="non" value="choix_2">
+                    <input type="radio" name="demande" id="non" value="non">
                 </div>
                 <div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="mess" rows="5" cols="30"
+                    <textarea name="message" id="mess" rows="5" cols="30" maxlength="500"
                         required></textarea>
                 </div>
                 <div>
