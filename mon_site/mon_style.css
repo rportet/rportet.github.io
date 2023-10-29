@@ -1,5 +1,9 @@
 /**Styles communs à toutes les pages**/
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .photo_profil {
     height: 150px;
     width: auto;
@@ -68,6 +72,33 @@
 
 .menu ul li ul li:hover {
     background: #666;
+}
+
+footer{
+    text-align: center;
+    margin-top:15px;
+    padding-top:4px;
+    border-top: dashed 1px black;
+}
+
+a {
+    text-decoration: none;
+}
+nav a {
+    color: yellow;
+}
+
+nav a:visited{
+    color:coral;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+footer a:hover{
+    color:rgb(142, 142, 249);
 }
 
 
@@ -180,3 +211,32 @@ td a img {
     border: 1px solid #000000;
     border-collapse: collapse;
 }
+
+/**Page de contact**/
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boutons{
+    text-align: end;
+}
+
+.champ, .radio{
+    margin-bottom: 8px;
+}
+
+
+.champ > label{
+    display: block;
+}
+
+.champ > input, .champ > textarea {
+    width: 100%;
+}
+
+
+

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Mon site</title>
-        <link type="text/css" rel="stylesheet" href="tp2.css" />
+        <link type="text/css" rel="stylesheet" href="mon_style.css" />
     </head>
     <body>
         <header class="menu">
@@ -32,26 +32,27 @@
                 </nav>
             </div>
         </header>
-        <h1><mark><em>Page Contact</em></mark></h1>
+        <h1 class="titre"><em>Page Contact</em></h1>
         <h1>PORTET Rémy</h1>
-        <div>
+        <div class="formulaire">
             <form action="traitement.php" method="get">
-                <div>
+                <div class="champ">
                     <label for="nom">Nom</label>
                     <input type="text" id="nom" name="nom" placeholder="Nom" maxlength="30"
                         required />
                 </div>
-                <div>
+                <div class="champ">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" maxlength="256"
                         placeholder="Email" required />
                 </div>
-                <div>
+                <div class="champ">
                     <label for="notel">Numéro de téléphone</label>
                     <input type="tel" id="notel" name="notel" maxlength="20"
                         placeholder="Numéro de téléphone" />
                 </div>
-                <div>
+                <div class="champ">
+                    <label for="motif">Motif du contact</label>
                     <select name="motif" id="motif">
                         <option value="1">Professionnel</option>
                         <option value="2">Personnel</option>
@@ -59,7 +60,7 @@
                         <option value="4">J'avais faim</option>
                     </select>
                 </div>
-                <div>
+                <div class="champ">
                     <label for="creneau">Créneau horaire</label>
                     <input type="datetime-local" id="date" name="date" placeholder="Date" />
                 </div>
@@ -67,28 +68,28 @@
                     <label for="oui">Première demande</label>
                     <input type="radio" name="demande" id="oui" value="oui"
                         checked>
-                </div>
-                <div>
+                
                     <label for="non">Pas la première demande</label>
                     <input type="radio" name="demande" id="non" value="non">
                 </div>
-                <div>
+                <div class="champ">
                     <label for="message">Message</label>
-                    <textarea name="message" id="mess" rows="5" cols="30" maxlength="500"
+                    <textarea name="message" id="mess" rows="5" maxlength="500"
+                    placeholder="Saisissez votre message"
                         required></textarea>
                 </div>
-                <div>
-                    <label for="submit">Bouton d'envoi</label>
+                <div class="boutons">
+                    <hr/>
                     <input type="submit" id="submit" name="submit"
                         placeholder="Envoyer" />
-                </div>
-                <div>
-                    <label for="reset">Réinitialiser le formulaire</label>
+                
                     <input type="reset" id="reset" name="reset"
                         placeholder="Réinitialiser" />
                 </div>
             </form>
         </div>
-        <footer>Mes informations (contact, adresse mail, téléphone)</footer>
+        <footer>
+            Mes informations de contact : téléphone : <a href="tel:+33767097242">07 67 09 72 42</a> ; adresse mail : <a href="mailto:remy@portet.org?subject=contact%20depuis%20ma%20page">remy@portet.org</a>
+        </footer>
     </body>
 </html>
