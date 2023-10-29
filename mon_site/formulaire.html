@@ -12,18 +12,22 @@
                 <nav>
                     <div>
                         <a class="lien_menu" href="accueil.html" title="accueil">Accueil</a>
-                        <a class="lien_menu" href="cursus.html" title="mon cursus scolaire">Mon cursus scolaire</a>
-                        <a class="lien_menu" href="activites.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
-                            <ul>
-                              <li>
+                        <a class="lien_menu" href="cursus.html"
+                            title="mon cursus scolaire">Mon cursus scolaire</a>
+                        <a class="lien_menu" href="activites.html"
+                            title="activités extra-scolaires">Mes activités
+                            extra-scolaires</a>
+                        <ul>
+                            <li>
                                 <a class="lien_menu" href="#">Médias</a>
                                 <ul>
-                                  <li><a href="images.html" title="Images">Images</a></li>
-                                  <li><a href="videos.html" title="Videos">Vidéos</a></li>
+                                    <li><a href="images.html" title="Images">Images</a></li>
+                                    <li><a href="videos.html" title="Videos">Vidéos</a></li>
                                 </ul>
-                              </li>
-                            </ul>
-                        <a class="lien_menu" href="formulaire.html" title="formulaire">Formulaire</a>    
+                            </li>
+                        </ul>
+                        <a class="lien_menu" href="formulaire.html"
+                            title="formulaire">Formulaire</a>
                     </div>
                 </nav>
             </div>
@@ -32,30 +36,57 @@
         <h1>PORTET Rémy</h1>
         <div>
             <form action="traitement.php" method="get">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom" required/>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required/>
-                <label for="notel">Numéro de téléphone</label>
-                <input type="tel" id="notel" name="notel" placeholder="Numéro de téléphone"/>
-                <select name="motif" id="motif">
-                    <option value="1">Professionnel</option>
-                    <option value="2">Personnel</option>
-                    <option value="3">Ennui</option>
-                    <option value="4">J'avais faim</option>
-                </select>
-                <label for="creneau">Créneau horaire</label>
-                <input type="date" id="date" name="date" placeholder="Date"/>
-                <label for="oui">Première demande</label>
-                <input type="radio" name="oui" id="oui" value="choix_1" checked>
-                <label for="non">Pas la première demande</label>
-                <input type="radio" name="non" id="non" value="choix_2">
-                <label for="message">Message</label>
-                <textarea name="message" id="mess" rows="5" cols="30" required></textarea>
-                <label for="submit">Bouton d'envoi</label>
-                <input type="submit" id="submit" name="submit" placeholder="Envoyer"/>
-                <label for="reset">Réinitialiser le formulaire</label>
-                <input type="reset" id="reset" name="reset" placeholder="Réinitialiser"/>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom"
+                        required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Email" required />
+                </div>
+                <div>
+                    <label for="notel">Numéro de téléphone</label>
+                    <input type="tel" id="notel" name="notel"
+                        placeholder="Numéro de téléphone" />
+                </div>
+                <div>
+                    <select name="motif" id="motif">
+                        <option value="1">Professionnel</option>
+                        <option value="2">Personnel</option>
+                        <option value="3">Ennui</option>
+                        <option value="4">J'avais faim</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="creneau">Créneau horaire</label>
+                    <input type="date" id="date" name="date" placeholder="Date" />
+                </div>
+                <div>
+                    <label for="oui">Première demande</label>
+                    <input type="radio" name="oui" id="oui" value="choix_1"
+                        checked>
+                </div>
+                <div>
+                    <label for="non">Pas la première demande</label>
+                    <input type="radio" name="non" id="non" value="choix_2">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="mess" rows="5" cols="30"
+                        required></textarea>
+                </div>
+                <div>
+                    <label for="submit">Bouton d'envoi</label>
+                    <input type="submit" id="submit" name="submit"
+                        placeholder="Envoyer" />
+                </div>
+                <div>
+                    <label for="reset">Réinitialiser le formulaire</label>
+                    <input type="reset" id="reset" name="reset"
+                        placeholder="Réinitialiser" />
+                </div>
             </form>
         </div>
         <footer>Mes informations (contact, adresse mail, téléphone)</footer>
