@@ -6,19 +6,29 @@
         <link type="text/css" rel="stylesheet" href="tp2.css" />
     </head>
     <body>
-        <header>
-            <div class="sticky">
-            <nav>
+        <header class="menu">
+            <div>
                 <h2>Plan du site :</h2>
-                    <a href="mon_site_page1.html" title="Page d'accueil">Page d'accueil</a>
-                    <a href="mon_site_page2.html" title="cursus scolaire">Cursus scolaire</a>
-                    <a href="mon_site_page3.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
-                    <a href="mon_site_page4.html" title="Images">Images</a>
-                    <a href="mon_site_page5.html" title="Videos">Videos</a>
-            </nav>
-        </div>
-        <h1><mark><em>Page Contact</em></mark></h1>
+                <nav>
+                    <div>
+                        <a class="lien_menu" href="accueil.html" title="accueil">Accueil</a>
+                        <a class="lien_menu" href="cursus.html" title="mon cursus scolaire">Mon cursus scolaire</a>
+                        <a class="lien_menu" href="activites.html" title="activités extra-scolaires">Mes activités extra-scolaires</a>
+                            <ul>
+                              <li>
+                                <a class="lien_menu" href="#">Médias</a>
+                                <ul>
+                                  <li><a href="images.html" title="Images">Images</a></li>
+                                  <li><a href="videos.html" title="Videos">Vidéos</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                        <a class="lien_menu" href="formulaire.html" title="formulaire">Formulaire</a>    
+                    </div>
+                </nav>
+            </div>
         </header>
+        <h1><mark><em>Page Contact</em></mark></h1>
         <h1>PORTET Rémy</h1>
         <div>
             <form action="traitement.php" method="get">
