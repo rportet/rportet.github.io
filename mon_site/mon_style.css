@@ -21,15 +21,17 @@ body{
     position: sticky;
     top: 0;
     background-color: white;
-    padding: 10px;
+    padding: top 20px;
     box-shadow: 5px 5px 10px black;
     text-align: center;
+    border-radius: 20px;
 }
 
 .menu div nav div {
     display: flex;
     justify-content: space-around;
     background-color: forestgreen;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .menu div a {
@@ -104,6 +106,58 @@ footer a:hover{
 
 
 /**Page d'accueil**/
+
+/*
+.liens_res {
+    float: right;
+    width: 20%;
+    height: 400px;
+    border: solid grey 2px;
+}
+*/
+
+.contact {
+    clear: right;
+}
+
+.res_soc a img {
+    height: 50px;
+    width: auto;
+}
+
+@media screen and (min-width: 800px){
+    .titre_res {
+        position: fixed;
+        left: 1110px;
+        bottom: 550px;
+    }
+
+    .res_soc {
+        position: fixed;
+        left: 1100px;
+        bottom: 480px;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .titre_res {
+        position: fixed;
+        bottom: 350px;
+        left: 100px;
+    }
+
+    .res_soc {
+        position: fixed;
+        left: 150px;
+        bottom: 300px;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
 
 /*Paragraphes déroulants*/
 
