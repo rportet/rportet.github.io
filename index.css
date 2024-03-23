@@ -6,21 +6,42 @@ body {
 
 h1 {
     text-align: center;
-    padding-top: 30px;
-    font-size: 100px;
+    padding: 500px;
+    font-size: 150px;
     background-color: aquamarine;
-    border-color: rgba(127, 255, 212, 0.779);
+}
+
+.index {
+    font-size: 30px;
+    background-color: rgb(225, 243, 243);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+div h2 {
+    font-style: italic;
+    font-size: 50px;
+    padding-left: 100px;
 }
 
 /*rgb(243, 236, 225);*/
 
-.presentation {
-    background-color: rgb(225, 243, 243);
-    padding: 20px;
-    border: solid 5px;
-    border-color: rgba(225, 243, 243, 0.692);
-    border-radius: 0 50px 50px 0;
+.citation {
+    font-size: 75px;
+    padding: 50px;
+    font-style: italic;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform:capitalize;
+    font-style: italic;
+    background-color: rgb(225, 243, 243);
+    padding: 10px;
+    border-radius: 50px;
 }
