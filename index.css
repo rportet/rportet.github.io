@@ -1,14 +1,15 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
 h1 {
-    text-align: center;
     padding: 500px;
     font-size: 150px;
     background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .indexStyle {
