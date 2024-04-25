@@ -15,6 +15,10 @@ body {
     text-align: center;
 }
 
+.content li {
+    text-align: left;
+}
+
 .menu {
     list-style-type: none;
     margin: 0;
