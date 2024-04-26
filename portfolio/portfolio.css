@@ -28,6 +28,14 @@ body {
 }
 
 .menu {
+    height: 4%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.menu nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
