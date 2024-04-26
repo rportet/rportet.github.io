@@ -33,6 +33,10 @@ body {
     position: sticky;
     top: 0;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .menu nav {
@@ -41,6 +45,12 @@ body {
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+}
+
+.menu h2 {
+    color: white;
+    padding-left: 20px;
+    align-self: center;
 }
 
 .menu_link {
