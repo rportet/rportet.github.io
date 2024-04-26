@@ -122,6 +122,15 @@ body {
     width: 100%;
 }
 
+#author {
+    font-size: small;
+    text-align: center;
+}
+
+.underline {
+    text-decoration:underline;
+}
+
 hr {
     width: 95%;;
 }
