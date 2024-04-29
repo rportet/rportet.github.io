@@ -84,7 +84,7 @@ nav ul {
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-    color: #635f5f;
+    color: white;
   }
 
   nav ul li:hover {
@@ -209,14 +209,24 @@ h1 {
 }
 
 hr {
-    width: 95%;;
+    width: 95%;
+    border-style:dashed;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#contact hr {
+    border-style: solid;
 }
 
 #aboutMe img {
     height: 200px;
     width: auto;
     box-shadow: 2px 2px 2px grey;
-    border-radius: 20px;
+    border-radius: 100px;
+    border-width: 2px;
+    border-color: grey;
+    border-style: dashed;
 }
 
 .souligne {
