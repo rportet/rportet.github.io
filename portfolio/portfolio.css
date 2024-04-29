@@ -211,3 +211,14 @@ h1 {
 hr {
     width: 95%;;
 }
+
+#aboutMe img {
+    height: 200px;
+    width: auto;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 20px;
+}
+
+.souligne {
+    text-decoration: underline;
+}
