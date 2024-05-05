@@ -37,6 +37,7 @@ body {
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .menu nav {
@@ -137,6 +138,33 @@ h1 {
     margin-top: 20px;
 }
 
+.jauge-hover {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.jauge-hover:hover {
+    transform: scale(1.1);
+}
+
+.jauge-hover::after {
+    content: "Texte pour tester si tout ça marche bien sans tout décaler n'importe comment par la suite, c'est principalement pour cette raison qu'il est nécessairement beaucoup trop long et inutile, afin de pouvoir m'assurer qu'il n'y ait aucun problème lorsque ça s'affiche sur l'écran";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.jauge-hover:hover::after {
+    opacity: 1;
+    z-index: 1;
+}
+
 .jauge-bdd {
     width: 80%;
     /* Largeur de la jauge à modifier selon le niveau */
@@ -186,9 +214,11 @@ h1 {
 }
 
 .contentSQ {
+    height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
 }
 
