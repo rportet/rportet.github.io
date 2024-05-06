@@ -17,7 +17,7 @@
                             <li><a class="menu_link" href="#schoolCurriculum" title="school curriculum">Cursus formation</a></li>
                             <li><a class="menu_link" href="#skillsQualities" title="skills qualities">Compétences et qualités</a></li>
                             <li><a class="menu_link" href="#projects" title="projects">Projets / SAE</a></li>
-                            <li><a class="menu_link" href="#individualProjects" title="individual projects">My individual projects</a></li> 
+                            <li><a class="menu_link" href="#individualProjects" title="individual projects">Mes projets individuels</a></li> 
                             <li><a class="menu_link" href="#cv" title="cv">CV</a></li>
                             <li><a class="menu_link" href="#contact" title="contact">Contact</a></li>
                         </ul>
@@ -34,9 +34,7 @@
             <img src="ma_photo.jpeg" title="profilePicture" alt="photo de profil">
             <p>
                 Bonjour, je m'appelle Rémy Portet, j'ai 19 ans, et je suis actuellement étudiant en première année de BUT Informatique à Aubière ayant validé son premier semestre. Je suis <strong>sérieux</strong>, <strong>curieux</strong>, et <strong>discret</strong>. Je suis actuellement à la recherche d'une <strong>alternance sur 2 ans</strong> dans le domaine du <em>développement</em> pour ma deuxième et troisième année de BUT, <em>de Septembre 2024 à Septembre 2026</em>, sur un rythme de 3 mois - 3 mois.
-                <!--
-                Hello, I am a 19 years old student learning computer sciences at Aubière's IUT Informatique and I passed my first semester. I am rather serious, curious, and discreet. I am currently looking for a 2-year work-study program for my second and third year of BUT Informatique, with a rythm of 3 months - 3 months. 
-                -->
+                <!--Hello, I am a 19 years old student learning computer sciences at Aubière's IUT Informatique and I passed my first semester. I am rather serious, curious, and discreet. I am currently looking for a 2-year work-study program for my second and third year of BUT Informatique, with a rythm of 3 months - 3 months.-->
             </p>
         </div>
 
@@ -113,21 +111,83 @@
             <h4>Dans cette partie, je vais vous expliquer plusieurs projets faits à l'IUT, comment je les ai réalisées, et ce qu'ils m'ont appris ainsi que les compétences développées durant l'avancement du projet.</h4>
             <hr>
             <div>
-                <ul>
-                    <li><strong class="souligne">Installation de services réseau</strong></li>
-                    <li><strong class="souligne">Contexte + Objectif :</strong> Il s'agit d'une SAE à réaliser individuellement. L'objectif de cette SAE était l'apprentissage et la compréhension des processus de configurations réseaux basiques sur des machines tournant sous linux.</li>
-                    <li><strong class="souligne">Travail réalisé :</strong> Lors de cette SAE, j'ai du apprenre à maîtriser de nouvelles notions telles que les cartes réseaux, différents protocoles, ainsi que l'utilisation de scripts .sh. En effet, bien qu'il soit demandé de connaître les techniques de configuration manuelles, c'est-à-dire savoir configurer la machine en lignes de commandes, l'un des points essentiels de cette SAE était l'écriture de scripts shell, dont la fonction était de configurer automatiquement la machine au démarrage, avec des connexions aux machines par ssh.</li>
-                    <li><strong class="souligne">Résultats :</strong> Ma montée en compétence consiste à apprendre comment effectuer la configuration réseau basique d'une machine, mais cette SAE m'a également permis de progresser dans la gestion d'erreur. Cela m'a aussi permis de me familiariser avec les scripts shell.</li>
+                <h3><em><strong>Présentation de la première SAE</strong></em></h3>
+                <ul class="liste_sae">
+                    <li><strong class="souligne"><p>Installation de services réseau</p></strong></li>
+                    <li><strong class="souligne"><p>Contexte + Objectif :</p></strong> Il s'agit d'une SAE à réaliser individuellement. L'objectif de cette SAE était l'apprentissage et la compréhension des processus de configurations réseaux basiques sur des machines tournant sous linux.</li>
+                    <li><strong class="souligne"><p>Travail réalisé :</p></strong> Lors de cette SAE, j'ai du apprenre à maîtriser de nouvelles notions telles que les cartes réseaux, différents protocoles, ainsi que l'utilisation de scripts .sh. En effet, bien qu'il soit demandé de connaître les techniques de configuration manuelles, c'est-à-dire savoir configurer la machine en lignes de commandes, l'un des points essentiels de cette SAE était l'écriture de scripts shell, dont la fonction était de configurer automatiquement la machine au démarrage, avec des connexions aux machines par ssh.</li>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 141341.png" class="photo_sae">
+                        <p><em>Lors de cette SAE, nous utilisions un réseau de machines virtuelles afin de nous entraîner à la configuration réseau. Ici, une image des machines auxquelles nous pouvions avoir accès : en rouge les machines éteintes, en vert les machines lancées</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 141521.png" class="photo_sae">
+                        <p><em>Pour effectuer les tests sur les machines, nous pouvions lancer des commandes en utilisant des terminaux pour se connecter en route.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 142219.png" class="photo_sae">
+                        <p><em>Afin de vérifier si nos opérations étaient correctes, nous disposions d'un script fourni par l'équipe enseignante permettant de vérifier si les paramètres avaient été correctement modifiés. Pour cela, nous devions lancer toutes les machines et écrire une requête spécial dans un terminal.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 142356.png" class="photo_sae">
+                        <p><em>Lorsque le script se lançait, nous pouvions voir affichés des indicateurs permettant de savoir si ce qui avait été effectué était correct ou non.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 142501.png" class="photo_sae">
+                        <p><em>Au fur et à mesure de l'avancement des questions, les indicateurs pouvaient passer au vert, indiquant que la tâche avait été correctement effectuée.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-05 142556.png" class="photo_sae">
+                        <p><em>A la fin, une note s'affichait, calculée en fonction du nombre de questions remplies. Cela nous permettait de voir notre progression en direct et de savoir quels points étaient à retravailler.</em></p>
+                    </div>
+                    <li><strong class="souligne"><p>Résultats :</p></strong> Ma montée en compétence consiste à apprendre comment effectuer la configuration réseau basique d'une machine, mais cette SAE m'a également permis de progresser dans la gestion d'erreur. Cela m'a aussi permis de me familiariser avec les scripts shell.</li>
                 </ul>
                 <!--Insérer captures d'écran avec légendes-->
             </div>
             <hr>
             <div>
-                <ul>
-                    <li><strong class="souligne">Développement d'une application :</strong> Développement d'un jeu de Qwirkle</li>
-                    <li><strong class="souligne">Contexte + Objectif :</strong> Il s'agit d'une SAE à réaliser en trinôme. Le but est de développer un jeu, dans notre cas le Qwirkle, en utilisant .NET MAUI, XAML, ou encore le C#. Cliquez <a href="docPourLeQwirkle.com" title="lien qwirkle">ici</a> pour voir les règles du Qwirkle.</li>
-                    <li><strong class="souligne">Travail réalisé :</strong>Lors de cette SAE, j'ai du comprendre le fonctionnement de la conception d'une application en reliant des vues faites avec XAML, à une application console C# fonctionnelle. Ce projet s'étale sur une période de 4 mois, commençant le 18 Mars 2024 pour se terminer le 15 Juin 2024. Tout au long de ce projet, nous avons du rendre des livrables à des dates jalons, ce qui permettait un découpage des tâches à faire pour aboutir au produit final : par exemple, nous avons d'abord dû commencer par la conception des vues, avant de nous attaquer au développement de l'application en console, puis ajouter des détails au fur et à mesure, comme la persitstance, ou encore l'installateur pour l'utilisateur final. A la fin du projet, notre groupe est passé à l'oral devant un jury de profs qui nous a posés différentes questions sur le sujet, afin de nous assurer que nous avions bien compris l'ensemble des fonctionnalités de la SAE.   </li>
-                    <li><strong class="souligne">Résultats :</strong></li>
+                <h3><em><strong>Présentation de la deuxième SAE</strong></em></h3>
+                <ul class="liste_sae">
+                    <li><strong class="souligne"><p>Développement d'une application :</p></strong> Développement d'un jeu de Qwirkle</li>
+                    <li><strong class="souligne"><p>Contexte + Objectif :</p></strong> Il s'agit d'une SAE à réaliser en trinôme. Le but est de développer un jeu, dans notre cas le Qwirkle, en utilisant .NET MAUI, XAML, ou encore le C#. Cliquez <a href="https://fr.wikipedia.org/wiki/Qwirkle" title="lien qwirkle">ici</a> pour voir les règles du Qwirkle.</li>
+                    <li><strong class="souligne"><p>Travail réalisé :</p></strong>Lors de cette SAE, j'ai du comprendre le fonctionnement de la conception d'une application en reliant des vues faites avec XAML, à une application console C# fonctionnelle. Ce projet s'étale sur une période de 4 mois, commençant le 18 Mars 2024 pour se terminer le 15 Juin 2024. Tout au long de ce projet, nous avons du rendre des livrables à des dates jalons, ce qui permettait un découpage des tâches à faire pour aboutir au produit final : par exemple, nous avons d'abord dû commencer par la conception des vues, avant de nous attaquer au développement de l'application en console, puis ajouter des détails au fur et à mesure, comme la persitstance, ou encore l'installateur pour l'utilisateur final. A la fin du projet, notre groupe est passé à l'oral devant un jury de profs qui nous a posés différentes questions sur le sujet, afin de nous assurer que nous avions bien compris l'ensemble des fonctionnalités de la SAE.</li>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Organisation2024-c0bb92c29a1b20025b12a7acb1f0873b.png" class="photo_sae">
+                        <p><em>La liste des tâches que nous devrons effectuer au fur et à mesure de la SAE.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/1.png" class="photo_sae">
+                        <p><em>Voici un exemple d'un des persona créés pour la SAE.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/storyboardlast.png" class="photo_sae">
+                        <p><em>Ici, les stroryboards conçus en début de projet, comme première ébauche de ce à quoi ressemblerait l'application.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/UseCasesSAE.svg" class="photo_sae">
+                        <p><em>Il s'agit du use case utilisé pour réfléchir à la navigation dans l'application</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/classDiagram.svg" class="photo_sae">
+                        <p><em>Le diagramme de classe représentant la conception de l'application avec les différentes classes et méthodes utilisées, et leurs relations entre elles.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 045553.png" class="photo_sae">
+                        <p><em>Une view XAML du menu pour notre application</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 045702.png" class="photo_sae">
+                        <p><em>Une view XAML de l'écran de création d'une partie pour notre application</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 045635.png" class="photo_sae">
+                        <p><em>Une view XAML du tableau des scores pour notre application</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 045417.png" class="photo_sae">
+                        <p><em>Il s'agit d'une première conception de l'application en interface console, utilisant du C#.</em></p>
+                    </div>
+                    <li><strong class="souligne"><p>Résultats :</p></strong>Il m'est pour l'instant impossible de présenter mes résultats quant à cette SAE, étant donnée qu'elle n'est pas encore finie. Je vous encourage à venir revisiter cette page aux alentours de la mi-juin afin d'espérer obtenir une mise à jour concernant l'avancement de cette dernière.</li>
                 </ul>
             </div>
             <hr>
@@ -135,7 +195,31 @@
 
         <div id="individualProjects" class="content">
             <h2>Projets individuels</h2>
-
+            <div>
+                <h3>Etude d'une partie de bowling</h3>
+                <ul class="liste_sae">
+                    <li><strong class="souligne"><p>Projet réalisé dans le cadre des TIPE en prépa</p></strong></li>
+                    <li><strong class="souligne"><p>Contexte + Objectif :</p></strong>Dans le cadre de ma formation en CPGE MP2I l'année précédente (année scolaire 2022-2023), j'ai dû travailler tout au long de l'année en binôme sur les TIPE (signifiant Travaux d'Initiative Personnelle Encadrés), qui est un projet qui compte beaucoup dans ce type de formation. L'objectif de notre étude était de déterminer s'il était possible de calculer des trajectoires afin de réaliser des tirs parfaits et de réussir à chaque lancer.</li>
+                    <li><strong class="souligne"><p>Travail réalisé :</p></strong>Pour cela, nous disposions de nombreuses données, telles que la taille et le poids de la boule et des quilles, la dimension de la piste, la vitesse moyenne d'une boule de bowling, … Nous avons commencé par émettre des hypothèses, calculer des trajectoires, chercher des moyens de résoudre ce problème avec différentes solutions, avant de nous lancer dans les expériences pratiques : nous avons reproduit un simulacre de partie de bowling à échelle réduite afin d'en faciliter l'observation, la réalisation, la prise de notes. Pour la boule de bowling, on choisit de la représenter par une boule de pétanque. Ce choix s'explique par la forte similarité entre le rapport volume/poids d'une boule de bowling et d'une boule de pétanque : elles ont toutes les deux une masse assez élevée par rapport à leur volume. Pour les quilles, un peu plus délicat, on choisit de les représenter sous la forme de petites bouteilles de plastique qu'on a préalablement lestées afin que leur poids soit proportionnel par rapport à la boule à de vraies quilles. A la fin du projet, nous avons dû effectuer une présentation orale devant l'équipe enseignante.</li>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Image1.png" class="photo_sae">
+                        <p><em>Une modélisation de la disposition des quilles dans une partie de bowling.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 054710.png" class="photo_sae">
+                        <p><em>L'une des premières hypothèses que nous avions faites étaient la manière dont les quilles chutaient selon l'angle de la trajectoire parcourue par la boule.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Image2.png" class="photo_sae">
+                        <p><em>Ici, nous avions schématisé ce que nous pensions être la trajectoire optimale d'une quille pour faire un strike à coup sûr.</em></p>
+                    </div>
+                    <div class="sae_captures">
+                        <img src="captures_sae204/Capture d'écran 2024-05-06 054758.png" class="photo_sae">
+                        <p><em>Voici plusieurs photos d'une même expérience où la boule fait chuter les quilles comme calculé précédemment.</em></p>
+                    </div>
+                    <li><strong class="souligne"><p>Résultats :</p></strong>Cela m'a permis de me familiariser avec les projets sur de longues périodes, ce qui est une qualité primordiale en entreprise, mais j'ai aussi appris à communiquer et à discuter en équipe, ce qui est tout aussi essentiel à la réussite d'un projet. Lors de l'évaluation de ce TIPE, mon binôme et moi-même avons reçu la meilleure note, qui était de 17, pour une moyenne de 11 sur l'ensemeble de la classe ; je pense doncavoir réussi à maîtriser les techniques et les compétences attendues pour ce type de travail.</li>
+                </ul>
+            </div>
         </div>
 
         <div id="cv" class="content">

@@ -6,7 +6,7 @@
 }   
 
 body {
-    height: 2000px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,4 +267,34 @@ hr {
 
 .souligne {
     text-decoration: underline;
+}
+
+.sae_captures p {
+    text-align: center;
+    font-size: 70%;
+}
+
+.photo_sae {
+    height: auto;
+    width: 60%;
+    padding-top: 12px;
+}
+
+.liste_sae li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.liste_sae div {
+    padding-top: 15px;
+}
+
+.content h3 {
+    font-size: 150%;
+    text-decoration: underline;
+    color: darkred;
+}
+
+#aboutMe div {
+    display: flex;
 }
