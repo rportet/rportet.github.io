@@ -31,18 +31,47 @@
     <!-- Contenu principal -->
     <div class="container mt-5 pt-5">
         <section id="about" class="py-5">
-            <h2 class="text-center">À propos de moi</h2>
-            <p>Je suis étudiant en deuxième année de BUT informatique à l'IUT d'Aubière, affilié à l'université Clermont Auvergne. Passionné par le développement web et logiciel, je cherche un stage de 50 jours à partir du 7 avril 2025.</p>
-            <p>En plus de cette recherche de stage, j'ai pour ambition de poursuivre ma troisième année à l'IUT en alternance au rythme de 3 mois entreprise / 3 mois école à partir de Septembre 2025. Si vous êtes intéressé, n'hésitez pas à me contacter, ou à considérer le stage comme une période d'essai pour cette décision.</p>
+            <div class="container">
+                <div class="about-card">
+                    <h2 class="text-center">À propos de moi</h2>
+                    <p>Je suis étudiant en deuxième année de BUT informatique à l'IUT d'Aubière, affilié à l'université Clermont Auvergne. Passionné par le développement web et logiciel, je cherche un <strong>stage de 50 jours</strong> à partir du <strong>7 avril 2025</strong>.</p>
+                    <p>En plus de cette recherche de stage, j'ai pour ambition de poursuivre ma troisième année à l'IUT en <strong>alternance</strong> au rythme de 3 mois entreprise / 3 mois école à partir de <strong>Septembre 2025</strong>. Si vous êtes intéressé, n'hésitez pas à me contacter, ou à considérer le stage comme une période d'essai pour cette décision.</p>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="py-5 bg-light">
             <h2 class="text-center">Cursus formation</h2>
-            <ul>
-                <li>2023 - 2026 : BUT Informatique à l'IUT d'Aubière</li>
-                <li>2022 - 2023 : CPGE MP2I (maths, physique, informatique, ingénierie)</li>
-                <li>2021 - 2022 : Baccalauréat scientifique spécialité mathématiques et physique-chimie</li>
-            </ul>
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎓</div>
+                        <div class="timeline-content">
+                            <h4>BUT Informatique</h4>
+                            <p>IUT d'Aubière - Université Clermont Auvergne</p>
+                            <span class="date">2023 - 2026</span>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item">
+                        <div class="timeline-icon">📚</div>
+                        <div class="timeline-content">
+                            <h4>CPGE MP2I</h4>
+                            <p>Maths, physique, informatique, ingénierie</p>
+                            <span class="date">2022 - 2023</span>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🏫</div>
+                        <div class="timeline-content">
+                            <h4>Baccalauréat Scientifique</h4>
+                            <p>Spécialité Mathématiques et Physique-Chimie</p>
+                            <span class="date">2021 - 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="py-5">
@@ -81,12 +110,27 @@
         
 
         <section id="projects" class="py-5 bg-light">
-            <h2 class="text-center">Projets universitaires</h2>
-            <ul>
-                <li><a href="../projects/mon_site/accueil.html">Mon premier site web (1A)</a></li>
-                <li><a href="../projects/portfolio/portfolio.html">Mon premier portfolio (1A)</a></li>
-            </ul>
+            <div class="container">
+                <h2 class="text-center">Projets universitaires</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <h4>Mon premier site web (1A)</h4>
+                            <p>Un projet de première année où j'ai conçu un site web en HTML et CSS.</p>
+                            <a href="../projects/mon_site/accueil.html" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <h4>Mon premier portfolio (1A)</h4>
+                            <p>Un portfolio personnel conçu pour présenter mes compétences et projets.</p>
+                            <a href="../projects/portfolio/portfolio.html" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     </div>
 
     <!-- Script Bootstrap -->
