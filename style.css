@@ -48,3 +48,68 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+
+/* Partie home.html */
+
+.skill {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    transition: margin-bottom 0.3s ease-in-out;
+}
+
+.progress-container {
+    width: 80%;
+    margin: auto;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover .progress-bar {
+    transform: scale(1.05);
+}
+
+.skill-description {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Nouvelle règle pour ajouter un espace sous la barre */
+.skill:hover {
+    margin-bottom: 50px; /* Espace ajouté pour éviter le chevauchement */
+}
+
+.skill:hover .skill-description {
+    display: block;
+    opacity: 1;
+}
+
+.home-btn {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 15px;
+}
