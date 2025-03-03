@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page d'accueil de Rémy Portet. Contient des liens sur mon CV, mon Linkedin, mon profil.">
-    <meta name="msvalidate.01" content="F8FA9AB42FE9BD5F8345EAAC01A087E7"/>
-    <title>Mon CV - Rémy Portet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page d'accueil de Rémy Portet. Contient des liens sur mon CV, mon Linkedin, mon profil.">
+  <meta name="msvalidate.01" content="F8FA9AB42FE9BD5F8345EAAC01A087E7"/>
+  <title>Mon CV - Rémy Portet</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Rémy Portet</h1>
-    </header>
-    
-    <section class="about">
-        <p>Je suis un étudiant <strong>en deuxième année de BUT informatique</strong> à <a href="https://iut.uca.fr/" target="_blank">l'IUT d'Aubière</a>, rattaché à <a href="https://www.uca.fr/" target="_blank">l'université Clermont Auvergne</a> à la recherche d'un <strong>stage</strong> d'une durée de <strong>50 jours à partir du 7 avril 2025</strong>, afin de mettre en pratique mes compétences et acquérir de l'expérience.</p>
-    </section>
+  <header>
+    <h1>Rémy Portet</h1>
+  </header>
+  
+  <section class="about">
+    <p>
+      Je suis un étudiant <strong>en deuxième année de BUT informatique</strong> à 
+      <a href="https://iut.uca.fr/" target="_blank">l'IUT d'Aubière</a>, rattaché à 
+      <a href="https://www.uca.fr/" target="_blank">l'université Clermont Auvergne</a> à la recherche d'un 
+      <strong>stage</strong> d'une durée de <strong>50 jours à partir du 7 avril 2025</strong>, afin de mettre en pratique mes compétences et acquérir de l'expérience.
+    </p>
+  </section>
 
-    <section class="links">
-        <h2 class="title">Liens utiles</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/rémy-portet-23631a2b9" target="_blank">Mon profil LinkedIn</a></li>
-            <li><a href="cv.pdf" target="_blank">Mon CV (PDF)</a></li>
-            <li><a href="about/home.html">À propos de moi</a></li>
-        </ul>
-    </section>
+  <section class="links">
+    <h2 class="title">Liens utiles</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/rémy-portet-23631a2b9" target="_blank" data-tooltip="Mon profil LinkedIn">
+          <img src="images/linkedin.png" alt="LinkedIn Icon">
+        </a>
+      </li>
+      <li>
+        <a href="cv.pdf" target="_blank" data-tooltip="Mon CV">
+          <img src="images/cv.png" alt="CV Icon">
+        </a>
+      </li>
+      <li>
+        <a href="about/home.html" data-tooltip="À propos de moi">
+          <img src="images/user.png" alt="À propos de moi Icon">
+        </a>
+      </li>
+    </ul>
+  </section>
 
-    <footer>
-        <h2 class="title">Contact</h2>
-        <p><strong class="underline">Téléphone</strong> : +33 7 67 09 72 42</p>
-        <div>
-            <h2 class="title">Emails :</h2> 
-            <ul>
-                <li><strong class="underline">Professionnel</strong> : remy.portet@etu.uca.fr</li>
-                <li><strong class="underline">Personnel</strong> : remy@portet.org</li>
-            </ul>
-        </div>
-    </footer>
+  <footer>
+    <h2 class="title">Contact</h2>
+    <ul class="contact-list">
+      <li>
+        <a href="tel:+33767097242" data-tooltip="Appeler">
+          <img src="images/phone.png" alt="Téléphone Icon">
+          <span>+33 7 67 09 72 42</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:remy.portet@etu.uca.fr?subject=Demande%20de%20stage&body=Je%20vous%20contacte%20car%20je%20suis%20intéressé%20par%20votre%20profil" data-tooltip="Envoyer un mail (addresse professionnelle)">
+          <img src="images/email.png" alt="Email Professionnel Icon">
+          <span>remy.portet@etu.uca.fr</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:remy@portet.org?subject=Demande%20de%20stage&body=Je%20vous%20contacte%20car%20je%20suis%20intéressé%20par%20votre%20profil" data-tooltip="Envoyer un mail (addresse personnelle)">
+          <img src="images/email.png" alt="Email Personnel Icon">
+          <span>remy@portet.org</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>

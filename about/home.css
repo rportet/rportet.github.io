@@ -1,138 +1,61 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
-}
-
-header {
-    background: #333;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-}
-
-.about, .links, .projects, footer {
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
-}
-
-a {
+  }
+  
+  /* Liens génériques */
+  a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
-}
-
-a:hover {
+    transition: color 0.3s ease;
+  }
+  a:hover {
     color: #0056b3;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-
-/* Partie home.html */
-
-
-.skill {
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-    transition: margin-bottom 0.3s ease-in-out;
-}
-
-.progress-container {
-    width: 50%;
-    height: 30px;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;  /* This centers the element */
-}
-
-.progress-bar {
-    height: 100%;
-    line-height: 30px;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.skill:hover .progress-bar {
-    transform: scale(1.05);
-}
-
-.skill-description {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    background: #f8f9fa;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.home-btn {
+  }
+  
+  /* Bouton Home dans la navbar */
+  .home-btn {
     font-weight: bold;
     font-size: 18px;
     padding-left: 15px;
-}
-
-/* Effet d'apparition au survol */
-.skill:hover .progress-bar {
-    transform: scale(1.05);
-}
-
-.skill:hover .skill-description {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* Partie home.html - timeline */
-
-
-.timeline {
+  }
+  
+  /* About Section */
+  .about-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+  }
+  .about-card h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  .about-card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Education Section – Timeline */
+  .timeline {
     position: relative;
     padding-left: 30px;
     margin-top: 20px;
-}
-
-.timeline-item {
+  }
+  .timeline-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    position: relative;
-}
-
-.timeline-icon {
+  }
+  .timeline-icon {
     width: 40px;
     height: 40px;
     background: #007bff;
@@ -143,63 +66,116 @@ footer {
     border-radius: 50%;
     font-size: 18px;
     margin-right: 15px;
-}
-
-.timeline-content {
+  }
+  .timeline-content {
     background: white;
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-}
-
-.timeline-content h4 {
+  }
+  .timeline-content h4 {
     margin: 0;
     font-size: 18px;
-}
-
-.timeline-content p {
+  }
+  .timeline-content p {
     margin: 5px 0 0;
     font-size: 14px;
     color: #555;
-}
-
-.date {
+  }
+  .date {
     font-size: 12px;
     color: #888;
-    display: block;
     margin-top: 5px;
-}
-
-
-/* About me */
-
-
-.about-card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skills Section */
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* espace fixe entre le progress container et la description */
+    margin-bottom: 30px;
+    transition: margin-bottom 0.3s ease-in-out;
+  }
+  .progress-container {
+    width: 50%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .progress-bar {
+    height: 100%;
+    line-height: 30px;
     text-align: center;
-    max-width: 700px;
-    margin: auto;
-}
-
-.about-card h2 {
-    margin-bottom: 15px;
-    color: #007bff;
-}
-
-.about-card p {
-    font-size: 16px;
-    color: #333;
-}
-
-
-/* projects */
-
-
-.project-card {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  .skill:hover .progress-bar {
+    transform: scale(1.05);
+  }
+  /* La description est cachée par défaut via une hauteur nulle ;
+     au survol, elle passe à une hauteur fixe (80px ici) de manière fluide.
+     Ainsi, chaque .skill réserve toujours le même espace sous le progress-container. */
+     /* Pour la section Skills (home.css) */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;           /* Espace fixe entre le progress container et la description */
+    margin-bottom: 30px;
+    min-height: 120px;   /* Hauteur totale fixe : 30px pour la barre + 10px gap + 80px pour la description */
+  }
+  
+  .progress-container {
+    width: 50%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  .skill:hover .progress-bar {
+    transform: scale(1.05);
+  }
+  
+  /* On réserve l'espace pour la description, qui est toujours présente (mais transparente) */
+  .skill-description {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .skill:hover .skill-description {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+    
+  
+  /* Projects Section */
+  .project-card {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -207,21 +183,32 @@ footer {
     text-align: center;
     margin: 15px 0;
     transition: transform 0.3s ease;
-}
-
-.project-card:hover {
+  }
+  .project-card:hover {
     transform: translateY(-5px);
-}
-
-.project-card h4 {
+  }
+  .project-card h4 {
     color: #007bff;
-}
-
-.project-card p {
+  }
+  .project-card p {
     font-size: 14px;
     color: #555;
-}
-
-.project-card .btn {
+  }
+  .project-card .btn {
     margin-top: 10px;
-}
+  }
+  
+  /* Animation d'apparition des sections */
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.3s;
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
