@@ -1,0 +1,66 @@
+/* sae2A.css */
+
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: #343a40;
+    color: #fff;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    color: #007bff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Back Button */
+  .back-button {
+    text-align: left;
+  }
+  .back-button .btn {
+    margin-bottom: 10px;
+  }
+  
+  /* Detail Sections */
+  .detail-section {
+    margin-bottom: 30px;
+  }
+  .detail-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #007bff;
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+  .detail-section p {
+    text-align: justify;
+  }
+  
+  /* Figures */
+  .figure {
+    margin: 0 auto;
+  }
+  .figure-caption {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
