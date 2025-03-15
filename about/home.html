@@ -33,7 +33,7 @@
         <section id="about" class="py-5">
             <div class="container">
                 <div class="about-card">
-                    <h2 class="text-center">À propos de moi</h2>
+                    <h2 class="text-center title">À propos de moi</h2>
                     <p>Je suis étudiant en deuxième année de BUT informatique à l'IUT d'Aubière, affilié à l'université Clermont Auvergne. Passionné par le développement web et logiciel, je cherche un <strong>stage de 50 jours</strong> à partir du <strong>7 avril 2025</strong>.</p>
                     <p>En plus de cette recherche de stage, j'ai pour ambition de poursuivre ma troisième année à l'IUT en <strong>alternance</strong> au rythme de 3 mois entreprise / 3 mois école à partir de <strong>Septembre 2025</strong>. Si vous êtes intéressé, n'hésitez pas à me contacter, ou à considérer le stage comme une période d'essai pour cette décision.</p>
                 </div>
@@ -41,7 +41,7 @@
         </section>
 
         <section id="education" class="py-5 bg-light">
-            <h2 class="text-center">Cursus formation</h2>
+            <h2 class="text-center title">Cursus formation</h2>
             <div class="container">
                 <div class="timeline">
                     <div class="timeline-item">
@@ -75,85 +75,140 @@
         </section>
 
         <section id="skills" class="py-5">
-            <h2 class="text-center">Compétences et qualités</h2>
-            
+            <h2 class="text-center title">Compétences et qualités</h2>
             <div class="container">
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 30%;">Applications mobiles</div>
+
+                <div class="skills-grid">
+                    <!-- Skill item template -->
+                    <div class="skill-item" data-percentage="30">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">30%</div>
+                        </div>
+                        <div class="skill-title">Applications mobiles</div>
+                        <div class="skill-description">Développement d'applications mobiles en Kotlin (Android Studio), et notions basiques en React (Node.js) pour le développement d'applications interactives, apprentissage en cours.</div>
                     </div>
-                    <div class="skill-description">Développement d'applications mobiles en Kotlin (Android Studio), et notions basiques en React (Node.js) pour le développement d'applications interactives, apprentissage en cours.</div>
+                    <!-- Add other skills following the same pattern -->
+                    <div class="skill-item" data-percentage="50">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">50%</div>
+                        </div>
+                        <div class="skill-title">Applications web</div>
+                        <div class="skill-description">Développement d'une application PHP (PhpStorm), et d'un site d'administration en ASP .NET Blazor, en tant que projet universitaire.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="60">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">60%</div>
+                        </div>
+                        <div class="skill-title">Développement d'applications</div>
+                        <div class="skill-description">Développement d'un jeu de Qwirkle avec .NET MAUI en tant que projet universitaire de première année.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="70">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">70%</div>
+                        </div>
+                        <div class="skill-title">HTML & CSS</div>
+                        <div class="skill-description">Maîtrise HTML et CSS pour la création de sites web modernes et responsives.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="70">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">70%</div>
+                        </div>
+                        <div class="skill-title">BDD / SQL</div>
+                        <div class="skill-description">Conception, création et gestion de tables (méthode MERISE), requêtes, utilisation de fonctions pl/pgSQL, triggers, vues. (MySQL, phpMyAdmin)</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="70">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">70%</div>
+                        </div>
+                        <div class="skill-title">Mathématiques</div>
+                        <div class="skill-description">Expérience en Python pour la modélisation mathématique et l'analyse de données.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="60">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">60%</div>
+                        </div>
+                        <div class="skill-title">Analyse, conception d'applications</div>
+                        <div class="skill-description">Compréhension du besoin client (sketchs, personas, use cases), conception UML et respect des principes SOLID.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="60">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">60%</div>
+                        </div>
+                        <div class="skill-title">Java / JavaFX</div>
+                        <div class="skill-description">Bonnes connaissances en Java et JavaFX pour créer des applications. (sceneBuilder, IntelliJ IDEA)</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="60">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">60%</div>
+                        </div>
+                        <div class="skill-title">UNIX / Linux</div>
+                        <div class="skill-description">Compréhension globale de l'architecture des systèmes, utilisation de scripts, configuration basique de machines.</div>
+                    </div>
+
+                    <div class="skill-item" data-percentage="70">
+                        <div class="skill-circle">
+                            <svg class="progress-ring" viewBox="0 0 100 100">
+                                <circle class="background-circle" stroke="#e0e0e0" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring-circle" stroke="#007bff" stroke-width="4" fill="transparent" r="40" cx="50" cy="50"/>
+                            </svg>
+                            <div class="percentage">70%</div>
+                        </div>
+                        <div class="skill-title">Réseaux</div>
+                        <div class="skill-description">Configuration du réseau sur des machines UNIX (routage, pare-feu).</div>
+                    </div>
+
                 </div>
 
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 50%;">Applications web</div>
-                    </div>
-                    <div class="skill-description">Développement d'une application PHP (PhpStorm), et d'un site d'administration en ASP .NET Blazor, en tant que projet universitaire.</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 60%;">Développement d'applications</div>
-                    </div>
-                    <div class="skill-description">Développement d'un jeu de Qwirkle avec .NET MAUI en tant que projet universitaire de première année.</div>
-                </div>
-                
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;">HTML & CSS</div>
-                    </div>
-                    <div class="skill-description">Maîtrise HTML et CSS pour la création de sites web modernes et responsives.</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;">BDD / SQL</div>
-                    </div>
-                    <div class="skill-description">Conception, création et gestion de tables (méthode MERISE), requêtes, utilisation de fonctions pl/pgSQL, triggers, vues. (MySQL, phpMyAdmin)</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;">Mathématiques</div>
-                    </div>
-                    <div class="skill-description">Expérience en Python pour la modélisation mathématique et l'analyse de données.</div>
-                </div>
-        
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 60%;">Java / JavaFX</div>
-                    </div>
-                    <div class="skill-description">Bonnes connaissances en Java et JavaFX pour créer des applications. (sceneBuilder, IntelliJ IDEA)</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 60%;">Analyse, conception d'applications</div>
-                    </div>
-                    <div class="skill-description">Compréhension du besoin client (sketchs, personas, use cases), conception UML et respect des principes SOLID.</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 60%;">UNIX / Linux</div>
-                    </div>
-                    <div class="skill-description">Compréhension globale de l'architecture des systèmes, utilisation de scripts, configuration basique de machines.</div>
-                </div>
-
-                <div class="skill">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;">Réseaux</div>
-                    </div>
-                    <div class="skill-description">Configuration du réseau sur des machines UNIX (routage, pare-feu).</div>
-                </div>
             </div>
         </section>
         
 
         <section id="projects" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center">Projets universitaires</h2>
+                <h2 class="text-center title">Projets universitaires</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="project-card">
@@ -184,5 +239,7 @@
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script style cercles -->
+    <script src="js/circles.js"></script>
 </body>
 </html>

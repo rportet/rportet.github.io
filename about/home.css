@@ -89,90 +89,133 @@ body {
     margin-top: 5px;
   }
   
-  /* Skills Section */
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* espace fixe entre le progress container et la description */
-    margin-bottom: 30px;
-    transition: margin-bottom 0.3s ease-in-out;
-  }
-  .progress-container {
-    width: 50%;
-    height: 30px;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  .progress-bar {
-    height: 100%;
-    line-height: 30px;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-  }
-  .skill:hover .progress-bar {
-    transform: scale(1.05);
-  }
-  /* La description est cachée par défaut via une hauteur nulle ;
-     au survol, elle passe à une hauteur fixe (80px ici) de manière fluide.
-     Ainsi, chaque .skill réserve toujours le même espace sous le progress-container. */
-     /* Pour la section Skills (home.css) */
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;           /* Espace fixe entre le progress container et la description */
-    margin-bottom: 30px;
-    min-height: 120px;   /* Hauteur totale fixe : 30px pour la barre + 10px gap + 80px pour la description */
+/* Skills Section */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+
+.skill-item {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.1));
+  display: flex;          /* Added */
+  justify-content: center; /* Added */
+  align-items: center;    /* Added */
+}
+
+.progress-ring {
+  position: absolute;     /* Changed */
+  top: 0;                 /* Added */
+  left: 0;                /* Added */
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.background-circle {
+  stroke: #f0f0f0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.progress-ring-circle {
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.percentage {
+  position: relative;     /* Changed from absolute */
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  transform: none;        /* Removed translate */
+  top: auto;              /* Reset */
+  left: auto;             /* Reset */
+}
+
+.skill-title {
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 0.95rem;
+  width: 100%;
+  text-align: center;
+}
+
+.skill-description {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.skill-item:hover .skill-description {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+svg {
+  transform-box: fill-box;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1.5rem;
   }
   
-  .progress-container {
-    width: 50%;
-    height: 30px;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 0 auto;
+  .skill-circle {
+      width: 100px;
+      height: 100px;
   }
   
-  .progress-bar {
-    height: 100%;
-    line-height: 30px;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-  }
-  .skill:hover .progress-bar {
-    transform: scale(1.05);
+  .skill-title {
+      font-size: 0.85rem;
   }
   
-  /* On réserve l'espace pour la description, qui est toujours présente (mais transparente) */
-  .skill-description {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    background: #f8f9fa;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
+  .percentage {
+      font-size: 1rem;
   }
-  
-  .skill:hover .skill-description {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-    
+}
   
   /* Projects Section */
   .project-card {
@@ -212,3 +255,11 @@ body {
     }
   }
   
+  .title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    color: #333;
+  }
