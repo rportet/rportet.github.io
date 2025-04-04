@@ -64,3 +64,81 @@ body {
     text-align: center;
   }
   
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.3s;
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Pour le conteneur mobile, supposez que la hauteur de la main-image est d'environ 500px.
+   Vous pouvez définir une hauteur fixe pour le conteneur des miniatures afin qu'elle ne dépasse pas
+   la hauteur de la main-image. Par exemple : */
+   .thumbnails-container {
+    display: grid;
+    gap: 10px;
+    /* La hauteur totale du conteneur sera limitée */
+    max-height: 500px; 
+  }
+  
+  /* Exemple pour 4 miniatures (adaptation pour mobile portrait) :
+     On définit 2 colonnes et 2 rangées */
+  .thumbnails-container.thumbnails-4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  /* Pour 5 miniatures */
+  .thumbnails-container.thumbnails-5 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .thumbnails-container.thumbnails-5 a:nth-child(5) {
+    grid-row: 1 / span 2;
+  }
+  
+  /* Pour 2 ou 3 images, on peut adapter en fonction de la disposition souhaitée. 
+     Par défaut, pour 2 images en format portrait, affichez-les en deux colonnes */
+  .thumbnails-container.thumbnails-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .thumbnails-container.thumbnails-3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .thumbnails-container.thumbnails-3 a:nth-child(3) {
+    grid-row: 1 / span 2;
+  }
+  
+  /* Les miniatures pour le format mobile, on fixe une hauteur relative à leur conteneur.
+     Par exemple, dans chaque cellule, on fixe une hauteur max pour éviter que l'image ne s’étire : */
+  .thumbnail {
+    width: 100%;
+    max-height: 200px; /* Occupera la hauteur maximale de sa cellule */
+    object-fit: contain; /* ou cover, selon l'effet désiré */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Effet de survol */
+  .thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pour assurer une taille cohérente sur mobile, vous pouvez aussi définir une hauteur fixe pour le conteneur
+     si nécessaire, par exemple dans le cas de l'application mobile : */
+  @media (max-width: 768px) {
+    .thumbnails-container {
+      max-height: 50%;
+    }
+  }
+  
