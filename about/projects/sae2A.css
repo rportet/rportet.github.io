@@ -1,11 +1,12 @@
 /* sae2A.css */
 
 /* Global */
-body {
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   
   /* Header */
@@ -142,3 +143,55 @@ body {
     }
   }
   
+/* sae2A.css updates */
+
+/* Constrain schema images to uniform height */
+.schema-img {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Constrain mobile carousel images to match schema height */
+.mobile-carousel-img {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Indiquer à l’utilisateur qu’on peut cliquer + léger zoom au survol */
+.clickable-img {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.clickable-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 30px 20px;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#carouselMobile .carousel-control-prev-icon,
+#carouselMobile .carousel-control-next-icon {
+  /* transforme la flèche en noir */
+  filter: brightness(0) !important;
+}
